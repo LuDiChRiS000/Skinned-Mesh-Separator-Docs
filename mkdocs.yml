@@ -1,0 +1,97 @@
+site_name: Skinned Mesh Separator
+site_url: https://ludichris000.github.io/skinned-mesh-separator-docs/
+site_description: >-
+  Split skinned character meshes by bone — directly in Unity.
+  Extract heads, arms, or any custom region in seconds.
+site_author: Chris Burns
+
+repo_name: Skinned Mesh Separator
+repo_url: https://assetstore.unity.com/packages/tools/utilities/skinned-mesh-separator-346784
+
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: deep purple
+      accent: purple
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: deep purple
+      accent: purple
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  font:
+    text: Inter
+    code: JetBrains Mono
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.instant
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.tabs.link
+
+plugins:
+  - search
+  - to-pdf:
+      author: Chris Burns
+      copyright: Copyright Chris Burns
+      cover: true
+      cover_title: Skinned Mesh Separator
+      cover_subtitle: User Guide
+      output_path: pdf/SkinnedMeshSeparator_UserGuide.pdf
+      toc_title: Table of Contents
+      enabled_if_env: ENABLE_PDF
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+
+nav:
+  - Home: index.md
+  - Getting Started:
+    - Installation: getting-started/installation.md
+    - Quick Start: getting-started/quick-start.md
+  - Usage:
+    - Tool Overview: usage/tool-overview.md
+    - Extracting Meshes: usage/extracting-meshes.md
+    - Common Workflows: usage/common-workflows.md
+  - Reference:
+    - All Features: reference/features.md
+    - Limitations: reference/limitations.md
+  - Support: support/support.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/DSUd2QcyHZ
+      name: Discord Support
+    - icon: fontawesome/solid/store
+      link: https://assetstore.unity.com/publishers/36542
+      name: Unity Asset Store
+    - icon: fontawesome/solid/globe
+      link: https://www.cerberusbytes.com
+      name: Website
+
+copyright: Copyright &copy; 2025 Chris Burns — Cerberus Bytes
